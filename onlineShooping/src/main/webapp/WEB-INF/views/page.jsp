@@ -27,7 +27,7 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap core CSS -->
+<!-- Bootstrap litera CSS -->
 <link href="${css}/bootstrap.litera.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
@@ -57,6 +57,13 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+			<!-- only when user click contact -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
+			
 		</div>
 		
 		<!-- Footer -->

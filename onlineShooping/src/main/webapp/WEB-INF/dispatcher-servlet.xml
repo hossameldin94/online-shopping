@@ -12,6 +12,8 @@
 
 	<context:component-scan
 		base-package="net.hoss.onlineShooping.controller"></context:component-scan>
+		<context:component-scan
+		base-package="net.hoss.shopingbackend.daoimpl"></context:component-scan>
 		<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/"></property>
